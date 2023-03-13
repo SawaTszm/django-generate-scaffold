@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "django-generate-scaffold"
+version = "0.1.0"
+description = ""
+authors = ["sawaTszm <sawa.tsuzumi@gmail.com>"]
+readme = "README.md"
+packages = [{include = "django_generate_scaffold"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
