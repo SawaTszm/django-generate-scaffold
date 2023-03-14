@@ -217,6 +217,41 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-generate-scaffold"
+version = "0.1.0"
+description = ""
+category = "main"
+optional = false
+python-versions = "^3.11"
+files = []
+develop = false
+
+[package.dependencies]
+cherrypy = "^18.8.0"
+django = "4.1.7"
+selenium = "^4.8.2"
+unittest-xml-reporting = "^3.2.0"
+
+[package.source]
+type = "directory"
+url = ".."
+
+[[package]]
+name = "exceptiongroup"
+version = "1.1.1"
+description = "Backport of PEP 654 (exception groups)"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "exceptiongroup-1.1.1-py3-none-any.whl", hash = "sha256:232c37c63e4f682982c8b6459f33a8981039e5fb8756b2074364e5055c498c9e"},
+    {file = "exceptiongroup-1.1.1.tar.gz", hash = "sha256:d484c3090ba2889ae2928419117447a14daf3c1231d5e30d0aae34f354f01785"},
+]
+
+[package.extras]
+test = ["pytest (>=6)"]
+
+[[package]]
 name = "h11"
 version = "0.14.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
@@ -711,18 +746,18 @@ sortedcontainers = "*"
 
 [[package]]
 name = "trio-websocket"
-version = "0.9.2"
+version = "0.10.0"
 description = "WebSocket library for Trio"
 category = "main"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.7"
 files = [
-    {file = "trio-websocket-0.9.2.tar.gz", hash = "sha256:a3d34de8fac26023eee701ed1e7bf4da9a8326b61a62934ec9e53b64970fd8fe"},
-    {file = "trio_websocket-0.9.2-py3-none-any.whl", hash = "sha256:5b558f6e83cc20a37c3b61202476c5295d1addf57bd65543364e0337e37ed2bc"},
+    {file = "trio-websocket-0.10.0.tar.gz", hash = "sha256:5a7a256cf45532a0e876b55c173f96228e95445869b6dfdb1556015de89796fa"},
+    {file = "trio_websocket-0.10.0-py3-none-any.whl", hash = "sha256:ae0a8bab4b0014510aca37fb67a6eaaa77e64aba372a7333845d2eb991989ae2"},
 ]
 
 [package.dependencies]
-async-generator = ">=1.10"
+exceptiongroup = "*"
 trio = ">=0.11"
 wsproto = ">=0.14"
 
@@ -821,4 +856,4 @@ test = ["zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "a1426b58d8032e492fb4c9b3807ec5603e7bd38fb44ba35bbcb157924c15c171"
+content-hash = "f55b84bb684273ac9b63ccce43fb766ddba1277e13ea944bc7f84a73cb527969"

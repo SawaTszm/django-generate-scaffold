@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "django-generate-scaffold"
+name = "test-project-ver4"
 version = "0.1.0"
 description = ""
 authors = ["sawaTszm <sawa.tsuzumi@gmail.com>"]
 readme = "README.md"
-packages = [{include = "django_generate_scaffold"}]
+packages = [{include = "test_project_ver4"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
